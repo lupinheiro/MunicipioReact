@@ -46,9 +46,11 @@
          <TouchableOpacity>
            <Text style={styles.loginText}>Signup</Text>
          </TouchableOpacity>
-
-
+            <TouchableOpacity style={styles.buttonAnon}>
+               <Text style={styles.loginText}>Anónimo</Text>
+               </TouchableOpacity>
        </View>
+
      );
    }
  }
@@ -99,5 +101,15 @@
    image:{
      width: 200,
      height: 200,
-   }
+   },
+   buttonAnon:{
+     width:"80%",
+     height:"20%",
+     backgroundColor:"#fb5b5a",
+     borderRadius:25,
+     height:50,
+     alignItems:"center",
+     justifyContent:"center",
+     marginTop:60
+   },
  });
