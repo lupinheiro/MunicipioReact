@@ -6,15 +6,20 @@
  * @flow strict-local
  */
 
- import React from 'react';
- import { StyleSheet,Image, Text, View, TextInput, TouchableOpacity } from 'react-native';
+ import React, {Component, useState} from 'react';
+ import {
+   StyleSheet,
+   Image,
+   Text,
+   View,
+   TextInput,
+   TouchableOpacity
+   } from 'react-native';
 
- export default class App extends React.Component {
-   state={
-     email:"",
-     password:""
-   }
-   render(){
+ export default function App(){
+   const [email, setEmail] = useState('');
+   const [password, setPassword] = useState('');
+
      return (
        <View style={styles.container}>
        <Image
@@ -27,7 +32,9 @@
              style={styles.inputText}
              placeholder="Email..."
              placeholderTextColor="#003f5c"
-             onChangeText={text => this.setState({email:text})}/>
+             onChangeText={text => setEmail(text)}
+             defaultValue={email}
+             />
          </View>
          <View style={styles.inputView} >
            <TextInput
@@ -35,7 +42,9 @@
              style={styles.inputText}
              placeholder="Password..."
              placeholderTextColor="#003f5c"
-             onChangeText={text => this.setState({password:text})}/>
+             onChangeText={text => setPassword(text)}
+             defaultValue={password}
+             />
          </View>
          <TouchableOpacity>
            <Text style={styles.forgot}>Forgot Password?</Text>
@@ -53,7 +62,6 @@
 
      );
    }
- }
 
  const styles = StyleSheet.create({
    container: {
