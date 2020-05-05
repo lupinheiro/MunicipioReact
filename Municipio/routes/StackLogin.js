@@ -3,6 +3,10 @@ import { View, Text, Button } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import {StackActions} from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native'
+import {styles} from './../stylesheet/global';
+import { StackNavigator} from 'react-navigation';
 
 import Login from './../pages/Login';
 import Notas from './../pages/Notas';
@@ -20,7 +24,16 @@ function StackLogin({navigation}) {
         <Stack.Screen name="Notas" component={Notas}
            options={{headerShown : true,}}/>
         <Stack.Screen name="TabRoute" component={TabRoute}
-           options={{headerShown : false,}}/>
+        options={({ navigation, route }) => ({
+            headerShown : true,
+              headerTitle: '+Município',
+              headerRight: () => (
+              <Button
+                onPress={() => navigation.dispatch(StackActions.replace('Login'))}
+                title="Log Out"
+                color="#003f5c"/>
+              ),
+            })}/>
        </Stack.Navigator>
       </NavigationContainer>
    );

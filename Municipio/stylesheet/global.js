@@ -56,4 +56,9 @@ export const styles = StyleSheet.create({
     justifyContent:"center",
     marginTop:60
   },
+  actionButtonIcon: {
+    fontSize: 20,
+    height: 22,
+    color: 'white',
+  },
 });

@@ -13,15 +13,7 @@ function StackMap({navigation}) {
    return (
        <Stack.Navigator initialRouteName="Home">
           <Stack.Screen name="Map" component={Map}
-          options={{
-             headerTitle: 'Mapa',
-             headerRight: () => (
-             <Button
-               onPress={() => navigation.dispatch(StackActions.replace('Login'))}
-               title="Log Out"
-               color="#003f5c"/>
-             ),
-             }}/>
+          options={{headerShown : false,}}/>
           <Stack.Screen name="AddNewToMap" component={AddNewToMap}
           options={{ title: 'Adicionar Pontos' }}/>
        </Stack.Navigator>
