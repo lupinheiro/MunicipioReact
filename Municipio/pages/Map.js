@@ -8,13 +8,7 @@ import {StackActions} from '@react-navigation/native';
          <Text>Aqui irá aparecer o Mapa</Text>
          <Button
            onPress={() => navigation.navigate('AddNewToMap')}
-           title="Adicionar Ponto"
-         />
-         <Button
-             onPress={() => navigation.dispatch(StackActions.replace('Login'))}
-           title="Log Out"
-         />
-
+           title="Adicionar Ponto" />
      </View>
    );
  }
