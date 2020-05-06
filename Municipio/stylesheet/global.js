@@ -12,6 +12,15 @@ export const styles = StyleSheet.create({
     color:"#fb5b5a",
     marginBottom:40
   },
+  containerNotas: {
+    flex: 1,
+    justifyContent: 'center',
+    paddingTop: 30,
+    paddingBottom: 10,
+    paddingLeft: 2,
+    paddingRight: 2,
+    backgroundColor: '#F8F8F8',
+  },
   inputView:{
     width:"80%",
     backgroundColor:"#465881",

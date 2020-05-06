@@ -1,28 +1,13 @@
-import React, { Component, useState} from 'react';
-import { View, Text, Button, TextInput } from 'react-native';
-import ActionButton from 'react-native-action-button';
-import {styles} from '../stylesheet/global';
-import Icon from 'react-native-vector-icons/FontAwesome'
+import React from 'react';
+import { View, Text, Button, SafeAreaView, Image } from 'react-native';
+import {StackActions} from '@react-navigation/native';
 
-function Notas({navigation}) {
-  return (
-    <View style={styles.container}>
-    <ListView></ListView>
-  </View>
 
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    paddingTop: 30,
-    paddingBottom: 10,
-    paddingLeft: 2,
-    paddingRight: 2,
-    backgroundColor: '#F8F8F8',
-  }
-});
-
-export default Notas;
+ function List({ navigation }) {
+   return (
+     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+       <Text> Notas </Text>
+     </View>
+   );
+ }
+export default List;
