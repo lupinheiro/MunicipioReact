@@ -20,7 +20,7 @@ function Login({ navigation }) {
          style={styles.image}
          source={require('./../images/login.png')}
          />
-        <Text style={styles.logo}>+Município</Text>
+        <Text style={styles.logo}>+Municipio</Text>
         <View style={styles.inputView} >
           <TextInput
             style={styles.inputText}
