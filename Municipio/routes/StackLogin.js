@@ -11,6 +11,7 @@ import { StackNavigator} from 'react-navigation';
 import Login from './../pages/Login';
 import Notas from './../pages/Notas';
 import TabRoute from './../routes/TabRoute';
+import NoteNav from './NoteNav';
 
 
 const Stack = createStackNavigator();
@@ -21,8 +22,8 @@ function StackLogin({navigation}) {
        <Stack.Navigator initialRouteName="Login">
          <Stack.Screen name="Login" component={Login}
             options={{headerShown : false,}}/>
-        <Stack.Screen name="Notas" component={Notas}
-           options={{headerShown : true,}}/>
+        <Stack.Screen name="NoteNav" component={NoteNav}
+           options={{headerShown : false,}}/>
         <Stack.Screen name="TabRoute" component={TabRoute}
         options={({ navigation, route }) => ({
             headerShown : true,

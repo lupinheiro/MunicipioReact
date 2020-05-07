@@ -12,6 +12,15 @@ export const styles = StyleSheet.create({
     color:"#fb5b5a",
     marginBottom:40
   },
+  containerNotas: {
+    flex: 1,
+    justifyContent: 'center',
+    paddingTop: 30,
+    paddingBottom: 10,
+    paddingLeft: 2,
+    paddingRight: 2,
+    backgroundColor: '#F8F8F8',
+  },
   inputView:{
     width:"80%",
     backgroundColor:"#465881",
@@ -61,4 +70,61 @@ export const styles = StyleSheet.create({
     height: 22,
     color: 'white',
   },
+  containerNotas: {
+    flex: 1,
+    backgroundColor: '#fff',
+    paddingVertical: 20,
+    paddingHorizontal: 10
+},
+iconButtonNotas: {
+    backgroundColor: '#219653',
+    position: 'absolute',
+    right: 0,
+    top: 40,
+    margin: 10
+},
+titleContainerNotas: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    flex: 1
+},
+titleNotas: {
+    fontSize: 24,
+    marginBottom: 16
+},
+textNotas: {
+    height: 300,
+    fontSize: 16
+},
+fabNotas: {
+    position: 'absolute',
+    margin: 20,
+    right: 0,
+    bottom: 0,
+    backgroundColor: '#219653'
+},
+containerViewNotes: {
+  flex: 1,
+  backgroundColor: '#fff',
+  paddingVertical: 20,
+  paddingHorizontal: 10
+},
+titleContainerViewNotes: {
+  alignItems: 'center',
+  justifyContent: 'center',
+  flex: 1
+},
+titleViewNotes: {
+  fontSize: 20
+},
+fabViewNotes: {
+  backgroundColor: '#219653',
+  position: 'absolute',
+  margin: 20,
+  right: 0,
+  bottom: 10
+},
+listTitleViewNotes: {
+  fontSize: 20
+},
 });

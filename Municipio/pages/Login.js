@@ -51,7 +51,7 @@ function Login({ navigation }) {
           <Text style={styles.loginText}>Signup</Text>
         </TouchableOpacity>
            <TouchableOpacity style={styles.buttonAnon}
-           onPress={() => navigation.navigate('Notas')}>
+           onPress={() => navigation.navigate('NoteNav')}>
               <Text style={styles.loginText}>Anónimo</Text>
               </TouchableOpacity>
       </View>

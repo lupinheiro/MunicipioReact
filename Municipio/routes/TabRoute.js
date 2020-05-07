@@ -7,6 +7,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import List from './../pages/List';
 import StackMap from './StackMap';
 import Notas from './../pages/Notas';
+import NoteNav from './NoteNav';
 
 const Tab = createBottomTabNavigator();
 
@@ -17,7 +18,7 @@ export default function TabRoute({navigation}) {
         options={{ title: 'Pontos Adicionados' }} />
         <Tab.Screen name="Map" component={StackMap}
         options={{ title: 'Mapa' }} />
-        <Tab.Screen name="Notas" component={Notas} />
+        <Tab.Screen name="Notas" component={NoteNav} />
       </Tab.Navigator>
   );
 }
