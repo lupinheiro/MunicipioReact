@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { StyleSheet, View } from 'react-native'
 import { Text, IconButton, TextInput, FAB } from 'react-native-paper'
 import Header from '../component/Header'
+import {styles} from './../stylesheet/global';
 
 function AddNotes({ navigation }) {
     const [noteTitle, setNoteTitle] = useState('')
@@ -20,16 +21,16 @@ function AddNotes({ navigation }) {
                 size={25}
                 color='white'
                 onPress={() => navigation.goBack()}
-                style={styles.iconButton}
+                style={styles.iconButtonNotas}
             />
 
-            <View style={styles.container}>
+            <View style={styles.containerNotas}>
                 <TextInput
                     label="Título"
                     value={noteTitle}
                     mode='outlined'
                     onChangeText={setNoteTitle}
-                    style={styles.title}
+                    style={styles.titleNotas}
                 />
                 <TextInput
                     label="Descrição"
@@ -37,13 +38,13 @@ function AddNotes({ navigation }) {
                     onChangeText={setNoteDescription}
                     mode="flat"
                     multiline={true}
-                    style={styles.text}
+                    style={styles.textNotas}
                     scrollEnabled={true}
                     returnKeyLabel='done'
                     blurOnSubmit={true}
                 />
                 <FAB
-                    style={styles.fab}
+                    style={styles.fabNotas}
                     small
                     icon="check"
                     disabled={noteTitle == '' ? true : false}
@@ -53,43 +54,5 @@ function AddNotes({ navigation }) {
         </>
     )
 }
-
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        paddingVertical: 20,
-        paddingHorizontal: 10
-    },
-    iconButton: {
-        backgroundColor: '#219653',
-        position: 'absolute',
-        right: 0,
-        top: 40,
-        margin: 10
-    },
-    titleContainer: {
-        alignItems: 'center',
-        justifyContent: 'center',
-        flex: 1
-    },
-    title: {
-        fontSize: 24,
-        marginBottom: 16
-    },
-    text: {
-        height: 300,
-        fontSize: 16
-    },
-    fab: {
-        position: 'absolute',
-        margin: 20,
-        right: 0,
-        bottom: 0,
-        backgroundColor: '#219653'
-    }
-
-})
 
 export default AddNotes
