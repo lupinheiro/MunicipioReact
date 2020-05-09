@@ -3,7 +3,6 @@ import { StyleSheet, View, FlatList } from 'react-native'
 import { Text, FAB, List } from 'react-native-paper'
 import Header from '../component/Header'
 import { useSelector, useDispatch } from 'react-redux'
-import { addnote, deletenote } from '../reducer/notesApp'
 import {styles} from './../stylesheet/global';
 
 function ViewNotes({ navigation }) {

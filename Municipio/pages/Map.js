@@ -4,7 +4,7 @@ import {StackActions} from '@react-navigation/native';
 
  function Map({ navigation }) {
    return (
-       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center',backgroundColor: '#003f5c' }}>
          <Text>Aqui irá aparecer o Mapa</Text>
          <Button
            onPress={() => navigation.navigate('AddNewToMap')}
