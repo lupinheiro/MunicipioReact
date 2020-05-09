@@ -41,14 +41,20 @@ function Login({ navigation }) {
             />
         </View>
         <TouchableOpacity>
-          <Text style={styles.forgot}>Forgot Password?</Text>
+          <Text style={styles.forgot}
+          onPress={() => navigation.navigate('ForgotPassword')}>
+            <Text style={styles.loginText}>ForgotPassword?</Text>
+          </Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.loginBtn}
-        onPress={() => navigation.dispatch(StackActions.replace('TabRoute'))}>
+          onPress={() => navigation.dispatch(StackActions.replace('TabRoute'))}>
           <Text style={styles.loginText}>LOGIN</Text>
         </TouchableOpacity>
         <TouchableOpacity>
-          <Text style={styles.loginText}>Signup</Text>
+          <Text style={styles.loginText}
+          onPress={() => navigation.navigate('SignUp')}>
+            <Text style={styles.loginText}>SignUp</Text>
+          </Text>
         </TouchableOpacity>
            <TouchableOpacity style={styles.buttonAnon}
            onPress={() => navigation.navigate('NoteNav')}>

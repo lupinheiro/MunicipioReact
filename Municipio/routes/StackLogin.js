@@ -9,9 +9,10 @@ import {styles} from './../stylesheet/global';
 import { StackNavigator} from 'react-navigation';
 
 import Login from './../pages/Login';
-import Notas from './../pages/Notas';
 import TabRoute from './../routes/TabRoute';
 import NoteNav from './NoteNav';
+import SignUp from '../pages/SignUp';
+import ForgotPassword from '../pages/ForgotPassword';
 
 
 const Stack = createStackNavigator();
@@ -35,6 +36,10 @@ function StackLogin({navigation}) {
                 color="#003f5c"/>
               ),
             })}/>
+             <Stack.Screen name="ForgotPassword" component={ForgotPassword}
+           options={{headerShown : true,}}/>
+            <Stack.Screen name="SignUp" component={SignUp}
+           options={{headerShown : true,}}/>
        </Stack.Navigator>
       </NavigationContainer>
    );

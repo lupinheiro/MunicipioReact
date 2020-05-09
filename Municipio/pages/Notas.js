@@ -5,8 +5,8 @@ import {StackActions} from '@react-navigation/native';
 
  function List({ navigation }) {
    return (
-     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center',backgroundColor: '#003f5c' }}>
-       <Text> Lista de Pontos </Text>
+     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+       <Text> Notas </Text>
      </View>
    );
  }

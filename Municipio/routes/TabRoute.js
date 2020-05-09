@@ -6,14 +6,17 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import List from './../pages/List';
 import StackMap from './StackMap';
-import Notas from './../pages/Notas';
 import NoteNav from './NoteNav';
 
 const Tab = createBottomTabNavigator();
 
 export default function TabRoute({navigation}) {
   return (
-      <Tab.Navigator>
+      <Tab.Navigator
+      tabBarOptions={{
+          activeTintColor: 'tomato',
+          inactiveTintColor: 'gray',
+        }}>
         <Tab.Screen name="List" component={List}
         options={{ title: 'Pontos Adicionados' }} />
         <Tab.Screen name="Map" component={StackMap}
