@@ -1,41 +1,82 @@
-import React, { useState } from 'react'
-import { StyleSheet, View } from 'react-native'
+import React, { useState, Component } from 'react'
+import { StyleSheet, View, Alert } from 'react-native'
 import { Text, IconButton, TextInput, FAB } from 'react-native-paper'
 import Header from '../component/Header'
 import {styles} from './../stylesheet/global';
 
-function AddNotes({ navigation }) {
-    const [noteTitle, setNoteTitle] = useState('')
-    const [noteDescription, setNoteDescription] = useState('')
 
-    function onSaveNote(props) {
-        navigation.state.params.addNote({ noteTitle, noteDescription })
-        navigation.goBack()
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
+const Stack = createStackNavigator();
+
+//Database
+import Realm from 'realm';
+let realm;
+
+    
+
+
+class AddNotes extends Component{
+    constructor(){
+        super();
+        this.state = {
+            noteTitle: '',
+            noteDescription: '',
+        }
+
+       /* realm = new Realm({
+            path: 'Notes.realm',
+            schema: [{
+                name: 'Note',
+                properties:
+                {
+                    id: {type: 'int', default: 0},
+                    noteTitle: 'string',
+                    noteDescription: 'string',
+             }}]
+            });
+            */
+    }   
+    
+    addRecord=()=>{
+        realm.write(() => { 
+            realm.create('Note', {
+                noteTitle: this.state.noteTitle,
+                noteDescription: this.state.noteDescription,
+            });
+        });
+        Alert.alert("Successfully added Note")
     }
 
-    return (
-        <>
+    GoToNotes = () =>
+    {
+       this.props.navigation.navigate('ViewNotes');
+
+    }
+
+    render(){
+        return (
+            <>
             <Header titleText='Adicionar Nova Nota' />
             <IconButton
                 icon="close"
                 size={25}
                 color='white'
-                onPress={() => navigation.goBack()}
+                onPress={this.GoToNotes}
                 style={styles.iconButtonNotas}
             />
 
             <View style={styles.containerNotas}>
                 <TextInput
                     label="Título"
-                    value={noteTitle}
                     mode='outlined'
-                    onChangeText={setNoteTitle}
+                    onChangeText= { ( text ) => { this.setState({ noteTitle: text })} }
                     style={styles.titleNotas}
                 />
                 <TextInput
                     label="Descrição"
-                    value={noteDescription}
-                    onChangeText={setNoteDescription}
+                    onChangeText= { ( text ) => { this.setState({ NoteDescription: text })} }
                     mode="flat"
                     multiline={true}
                     style={styles.textNotas}
@@ -47,12 +88,28 @@ function AddNotes({ navigation }) {
                     style={styles.fabNotas}
                     small
                     icon="check"
-                    disabled={noteTitle == '' ? true : false}
-                    onPress={() => onSaveNote()}
+                    disabled={this.noteTitle == '' ? true : false}
+                    onPress={this.addRegisto, this.GoToNotes}
                 />
             </View>
         </>
-    )
+        )
+    }
+
+
+
+
+
+/*function AddNotes({ navigation }) {
+    const [noteTitle, setNoteTitle] = useState('')
+    const [noteDescription, setNoteDescription] = useState('')
+
+    function onSaveNote(props) {
+        navigation.state.params.addNote({ noteTitle, noteDescription })
+        navigation.goBack()
+    }
+*/
+   
 }
 
 export default AddNotes
