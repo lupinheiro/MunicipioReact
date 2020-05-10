@@ -1,8 +1,9 @@
 import React, {Component } from 'react';
 import { StyleSheet, Platform, View, Button, Image, TextInput, TouchableOpacity, Alert, YellowBox, FlatList } from 'react-native';
-import { Text, FAB, List } from 'react-native-paper';
+import { Text, FAB,IconButton, List } from 'react-native-paper';
 import Header from '../component/Header';
 import {styles} from './../stylesheet/global';
+
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -39,6 +40,11 @@ class ViewNotes extends Component{
        this.props.navigation.navigate('AddNotes');
 
     }
+    GoToHome = () =>
+    {
+       this.props.navigation.navigate('Login');
+
+    }
 
 
     ListViewItemSeparator = () => {
@@ -50,7 +56,15 @@ class ViewNotes extends Component{
 render(){
     return (
         <>
-            <Header titleText='Notas Pessoais' />
+            <Header 
+            titleText='Notas Pessoais' />
+            <IconButton
+                icon="close"
+                size={25}
+                color='white'
+                onPress={this.GoToHome}
+                style={styles.iconButtonNotas}
+            />
             <View style={styles.containerViewNotes}>
                 {realm.objects("Note").length === 0 ? (
                     <View style={styles.titleContainerViewNotes}>
@@ -69,9 +83,6 @@ render(){
                                 
                             )}
                             />
-                      
-                           //keyExtractor={item => item.id.toString()}
-                        
                     )}
 
                 <FAB
@@ -86,5 +97,4 @@ render(){
     )
 }
 }
-
 export default ViewNotes

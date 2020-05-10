@@ -45,16 +45,13 @@ export default class AddNotes extends React.Component {
     
     addRecord=()=>{
         realm.write(() => {
-
-        const {noteTitle} = this.state;
-        const {noteDescription} = this.state;
                     realm.create('Note', {
-                        noteTitle: that.state.noteTitle,
-                        noteDescription: that.state.noteDescription,
+                        noteTitle: this.state.noteTitle,
+                        noteDescription: this.state.noteDescription,
                     });
         });
             
-            Alert.alert("Successfully added Note")
+            Alert.alert("Successfully added Note", onPress=this.props.navigation.dispatch(StackActions.replace('ViewNotes')))
         
        
     }
@@ -76,12 +73,12 @@ export default class AddNotes extends React.Component {
                 <TextInput
                     label="Título"
                     mode='outlined'
-                    onChangeText= {noteTitle =>  this.setState({ noteTitle })}
+                    onChangeText= { ( text ) => { this.setState({ noteTitle: text })} }
                     style={styles.titleNotas}
                 />
                 <TextInput
                     label="Descrição"
-                    onChangeText= { noteDescription => this.setState({ noteDescription })} 
+                    onChangeText= { ( text ) => { this.setState({ noteDescription: text })} } 
                     mode="flat"
                     multiline={true}
                     style={styles.textNotas}
@@ -94,7 +91,7 @@ export default class AddNotes extends React.Component {
                     small
                     icon="check"
                     disabled={this.noteTitle == '' ? true : false}
-                    onPress={this.addRecord.bind(this), this.GoToNotes}
+                    onPress={this.addRecord}
                 />
             </View>
         </>

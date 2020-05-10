@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 
-import List from './../pages/List';
+import List from '../pages/List';
 import StackMap from './StackMap';
 import NoteNav from './NoteNav';
 
