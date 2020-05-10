@@ -1,8 +1,10 @@
-import React, { useState, Component } from 'react'
+
 import { StyleSheet, View, Alert } from 'react-native'
+import React from 'react'
 import { Text, IconButton, TextInput, FAB } from 'react-native-paper'
 import Header from '../component/Header'
 import {styles} from './../stylesheet/global';
+import {StackActions} from '@react-navigation/native';
 
 
 import { NavigationContainer } from '@react-navigation/native';
@@ -14,51 +16,51 @@ const Stack = createStackNavigator();
 import Realm from 'realm';
 let realm;
 
-    
+export default class AddNotes extends React.Component {
+    GoToNotes = () =>
+    {
+       //this.props.navigation.navigate('ViewNotes');
+       this.props.navigation.dispatch(StackActions.replace('ViewNotes'));
 
-
-class AddNotes extends Component{
+    }
     constructor(){
         super();
         this.state = {
             noteTitle: '',
             noteDescription: '',
         }
-
-       /* realm = new Realm({
+  
+        realm = new Realm({
             path: 'Notes.realm',
             schema: [{
                 name: 'Note',
                 properties:
                 {
-                    id: {type: 'int', default: 0},
                     noteTitle: 'string',
                     noteDescription: 'string',
              }}]
             });
-            */
-    }   
+            
+    } 
     
     addRecord=()=>{
-        realm.write(() => { 
-            realm.create('Note', {
-                noteTitle: this.state.noteTitle,
-                noteDescription: this.state.noteDescription,
-            });
+        realm.write(() => {
+                    realm.create('Note', {
+                        noteTitle: this.state.noteTitle,
+                        noteDescription: this.state.noteDescription,
+                    });
         });
-        Alert.alert("Successfully added Note")
-    }
-
-    GoToNotes = () =>
-    {
-       this.props.navigation.navigate('ViewNotes');
-
+            
+            Alert.alert("Successfully added Note", onPress=this.props.navigation.dispatch(StackActions.replace('ViewNotes')))
+        
+       
     }
 
     render(){
         return (
             <>
-            <Header titleText='Adicionar Nova Nota' />
+            <Header 
+            titleText='Adicionar Nova Nota' />
             <IconButton
                 icon="close"
                 size={25}
@@ -76,7 +78,7 @@ class AddNotes extends Component{
                 />
                 <TextInput
                     label="Descrição"
-                    onChangeText= { ( text ) => { this.setState({ NoteDescription: text })} }
+                    onChangeText= { ( text ) => { this.setState({ noteDescription: text })} } 
                     mode="flat"
                     multiline={true}
                     style={styles.textNotas}
@@ -89,7 +91,7 @@ class AddNotes extends Component{
                     small
                     icon="check"
                     disabled={this.noteTitle == '' ? true : false}
-                    onPress={this.addRegisto, this.GoToNotes}
+                    onPress={this.addRecord}
                 />
             </View>
         </>
@@ -112,4 +114,3 @@ class AddNotes extends Component{
    
 }
 
-export default AddNotes

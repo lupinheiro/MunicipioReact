@@ -27,7 +27,7 @@ function StackLogin({navigation}) {
            options={{headerShown : false,}}/>
         <Stack.Screen name="TabRoute" component={TabRoute}
         options={({ navigation, route }) => ({
-            headerShown : true,
+            headerShown : false,
               headerTitle: '+Município',
               headerRight: () => (
               <Button
