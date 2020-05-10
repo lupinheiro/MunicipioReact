@@ -21,7 +21,8 @@ export default function TabRoute({navigation}) {
         options={{ title: 'Pontos Adicionados' }} />
         <Tab.Screen name="Map" component={StackMap}
         options={{ title: 'Mapa' }} />
-        <Tab.Screen name="Notas" component={NoteNav} />
+        <Tab.Screen name="Notas" component={NoteNav}
+         options={{headerShown : false}}/>
       </Tab.Navigator>
   );
 }

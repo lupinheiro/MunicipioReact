@@ -87,16 +87,4 @@ render(){
 }
 }
 
-/*function ViewNotes({ navigation }) {
-    // const [notes, setNotes] = useState([])
-    const notes = useSelector(state => state)
-    const dispatch = useDispatch()
-
-    const addNote = note => {
-        console.log(note)
-        dispatch(addnote(note))
-    }
-
-    const deleteNote = id =>dispatch(deletenote(id))
-*/
 export default ViewNotes
