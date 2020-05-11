@@ -25,7 +25,7 @@ function Login({ navigation }) {
           <TextInput
             style={styles.inputText}
             placeholder="Email..."
-            placeholderTextColor="#003f5c"
+            placeholderTextColor="#fff"
             onChangeText={text => setEmail(text)}
             defaultValue={email}
             />
@@ -35,7 +35,7 @@ function Login({ navigation }) {
             secureTextEntry
             style={styles.inputText}
             placeholder="Password..."
-            placeholderTextColor="#003f5c"
+            placeholderTextColor="#fff"
             onChangeText={text => setPassword(text)}
             defaultValue={password}
             />
@@ -47,7 +47,7 @@ function Login({ navigation }) {
           </Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.loginBtn}
-          onPress={() => navigation.dispatch(StackActions.replace('TabRoute'))}>
+                onPress={() => navigation.dispatch(StackActions.replace('TabRoute'))}>
           <Text style={styles.loginText}>LOGIN</Text>
         </TouchableOpacity>
         <TouchableOpacity>
@@ -57,7 +57,7 @@ function Login({ navigation }) {
           </Text>
         </TouchableOpacity>
            <TouchableOpacity style={styles.buttonAnon}
-           onPress={() => navigation.navigate('NoteNav')}>
+           onPress={() => navigation.dispatch(StackActions.replace('NoteNav'))}>
               <Text style={styles.loginText}>Anónimo</Text>
               </TouchableOpacity>
       </View>

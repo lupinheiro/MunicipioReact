@@ -1,6 +1,6 @@
 
-import { StyleSheet, View, Alert } from 'react-native'
-import React from 'react'
+import { StyleSheet, View, Alert,TouchableWithoutFeedback } from 'react-native'
+import React, { Component, useState, useEffect } from 'react';
 import { Text, IconButton, TextInput, FAB } from 'react-native-paper'
 import Header from '../component/Header'
 import {styles} from './../stylesheet/global';
@@ -16,47 +16,28 @@ const Stack = createStackNavigator();
 import Realm from 'realm';
 let realm;
 
-export default class AddNotes extends React.Component {
-    GoToNotes = () =>
-    {
-       //this.props.navigation.navigate('ViewNotes');
-       this.props.navigation.dispatch(StackActions.replace('ViewNotes'));
-
-    }
-    constructor(){
-        super();
-        this.state = {
-            noteTitle: '',
-            noteDescription: '',
-        }
+function AddNotes({ navigation }) {
+    const [noteTitle, setNoteTitle] = useState('');
+    const [noteDescription, setNoteDescription] = useState('');
   
-        realm = new Realm({
-            path: 'Notes.realm',
-            schema: [{
-                name: 'Note',
-                properties:
-                {
-                    noteTitle: 'string',
-                    noteDescription: 'string',
-             }}]
-            });
-            
-    } 
-    
-    addRecord=()=>{
+    function insert(){
+      if (noteTitle && noteDescription) {
+        realm = new Realm({ path: 'Notes.realm' });
+  
+        const lastRecord = realm.objects("Note").sorted('id', true)[0];
+        const highestId = lastRecord == null ? 0 : lastRecord.id;
+        const newid = highestId == null ? 1 : highestId + 1;
+  
         realm.write(() => {
-                    realm.create('Note', {
-                        noteTitle: this.state.noteTitle,
-                        noteDescription: this.state.noteDescription,
-                    });
+           realm.create('Note', {
+             id: newid,
+             noteTitle: noteTitle,
+             noteDescription: noteDescription,
+            });
         });
-            
-            Alert.alert("Successfully added Note", onPress=this.props.navigation.dispatch(StackActions.replace('ViewNotes')))
-        
-       
+        navigation.navigate('ViewNotes');
+      }
     }
-
-    render(){
         return (
             <>
             <Header 
@@ -65,7 +46,7 @@ export default class AddNotes extends React.Component {
                 icon="close"
                 size={25}
                 color='white'
-                onPress={this.GoToNotes}
+                onPress={() => navigation.navigate('ViewNotes')}
                 style={styles.iconButtonNotas}
             />
 
@@ -73,12 +54,12 @@ export default class AddNotes extends React.Component {
                 <TextInput
                     label="Título"
                     mode='outlined'
-                    onChangeText= { ( text ) => { this.setState({ noteTitle: text })} }
+                    onChangeText={text => setNoteTitle(text)}
                     style={styles.titleNotas}
                 />
                 <TextInput
                     label="Descrição"
-                    onChangeText= { ( text ) => { this.setState({ noteDescription: text })} } 
+                    onChangeText = { text => setNoteDescription(text)} 
                     mode="flat"
                     multiline={true}
                     style={styles.textNotas}
@@ -90,8 +71,7 @@ export default class AddNotes extends React.Component {
                     style={styles.fabNotas}
                     small
                     icon="check"
-                    disabled={this.noteTitle == '' ? true : false}
-                    onPress={this.addRecord}
+                    onPress={insert}
                 />
             </View>
         </>
@@ -111,6 +91,4 @@ export default class AddNotes extends React.Component {
         navigation.goBack()
     }
 */
-   
-}
-
+  export default AddNotes; 

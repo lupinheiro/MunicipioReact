@@ -1,8 +1,13 @@
-import React, {Component } from 'react';
-import { StyleSheet, Platform, View, Button, Image, TextInput, TouchableOpacity, Alert, YellowBox, FlatList } from 'react-native';
-import { Text, FAB,IconButton, List } from 'react-native-paper';
-import Header from '../component/Header';
-import {styles} from '../stylesheet/global';
+import { StyleSheet, View, Alert,TouchableWithoutFeedback } from 'react-native'
+import React, { Component, useState, useEffect } from 'react';
+import { Text, IconButton, TextInput, FAB } from 'react-native-paper'
+import Header from '../component/Header'
+import {styles} from './../stylesheet/global';
+import {StackActions} from '@react-navigation/native';
+
+
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
 function Map({ navigation }) {
   return (
@@ -13,7 +18,7 @@ function Map({ navigation }) {
          icon="close"
          size={25}
          color='white'
-         onPress={() => navigation.navigate('Login')}
+         onPress={() => navigation.dispatch(StackActions.replace('Login'))}
          style={styles.iconButtonNotas}
      />
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center',backgroundColor: '#003f5c' }}>

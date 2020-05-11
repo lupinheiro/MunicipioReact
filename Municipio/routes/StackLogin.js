@@ -37,9 +37,9 @@ function StackLogin({navigation}) {
               ),
             })}/>
              <Stack.Screen name="ForgotPassword" component={ForgotPassword}
-           options={{headerShown : true,}}/>
+           options={{headerShown : false,}}/>
             <Stack.Screen name="SignUp" component={SignUp}
-           options={{headerShown : true,}}/>
+           options={{headerShown : false,}}/>
        </Stack.Navigator>
       </NavigationContainer>
    );

@@ -2,14 +2,14 @@ import {StyleSheet} from 'react-native';
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#003f5c',
+    backgroundColor: '#242424',
     alignItems: 'center',
     justifyContent: 'center',
   },
   logo:{
     fontWeight:"bold",
     fontSize:50,
-    color:"#fb5b5a",
+    color:"#003f5c",
     marginBottom:40
   },
   containerNotas: {
@@ -23,7 +23,7 @@ export const styles = StyleSheet.create({
   },
   inputView:{
     width:"80%",
-    backgroundColor:"#465881",
+    backgroundColor:"#003f5c",
     borderRadius:25,
     height:50,
     marginBottom:20,
@@ -40,7 +40,7 @@ export const styles = StyleSheet.create({
   },
   loginBtn:{
     width:"80%",
-    backgroundColor:"#fb5b5a",
+    backgroundColor:"#003f5c",
     borderRadius:25,
     height:50,
     alignItems:"center",
@@ -58,7 +58,7 @@ export const styles = StyleSheet.create({
   buttonAnon:{
     width:"80%",
     height:"20%",
-    backgroundColor:"#fb5b5a",
+    backgroundColor:"#003f5c",
     borderRadius:25,
     height:50,
     alignItems:"center",
@@ -72,12 +72,12 @@ export const styles = StyleSheet.create({
   },
   containerNotas: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#003f5c',
     paddingVertical: 20,
-    paddingHorizontal: 10
+    paddingHorizontal: 10,
 },
 iconButtonNotas: {
-    backgroundColor: '#219653',
+    backgroundColor: '#003f5c',
     position: 'absolute',
     right: 0,
     top: 40,
@@ -86,14 +86,15 @@ iconButtonNotas: {
 titleContainerNotas: {
     alignItems: 'center',
     justifyContent: 'center',
-    flex: 1
+    flex: 1,
 },
 titleNotas: {
     fontSize: 24,
-    marginBottom: 16
+    marginBottom: 50,
+    height: 80,
 },
 textNotas: {
-    height: 300,
+    height: 200,
     fontSize: 16
 },
 fabNotas: {
@@ -101,24 +102,28 @@ fabNotas: {
     margin: 20,
     right: 0,
     bottom: 0,
-    backgroundColor: '#219653'
+    backgroundColor: '#003f5c'
 },
 containerViewNotes: {
   flex: 1,
-  backgroundColor: '#fff',
-  paddingVertical: 20,
-  paddingHorizontal: 10
+  backgroundColor: '#242424',
+  justifyContent: 'center',
+
 },
 titleContainerViewNotes: {
   alignItems: 'center',
   justifyContent: 'center',
-  flex: 1
+  flex: 1,
+  
 },
 titleViewNotes: {
-  fontSize: 20
+  fontSize: 22
+},
+titleViewNotesDesc: {
+  fontSize: 15
 },
 fabViewNotes: {
-  backgroundColor: '#219653',
+  backgroundColor: '#003f5c',
   position: 'absolute',
   margin: 20,
   right: 0,
@@ -127,4 +132,45 @@ fabViewNotes: {
 listTitleViewNotes: {
   fontSize: 20
 },
+line: {
+  backgroundColor: '#fff',
+  margin: 3,
+  flex: 2,
+  padding: 5,
+  flexDirection: 'row',
+},
+MainContainerDetail: {
+  backgroundColor: '#242424',
+flex: 1,
+},
+secondcontainerDetail: {
+flex: 1,
+flexDirection: 'row',
+justifyContent: 'center'
+},
+TextInputStyleDetail:
+{
+borderWidth: 1,
+marginTop: 100,
+padding: 10,
+margin: 10,
+borderColor: '#003f5c',
+height: 40,
+borderRadius: 10,
+marginBottom: 10,
+color:"white",
+textAlign: 'center',
+},
+buttonDetail: {
+alignItems: "center",
+backgroundColor: "#003f5c",
+padding: 10,
+borderRadius: 10,
+margin: 10,
+height: 40
+},
+TextInputStylesDetail:{
+  color: "white",
+}
+
 });
