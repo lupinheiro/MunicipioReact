@@ -12,9 +12,9 @@ const Stack = createStackNavigator();
 function NoteNav({navigation}) {
    return (
        <Stack.Navigator initialRouteName="Home">
-          <Stack.Screen name="AddNotes" component={AddNotes}
-          options={{headerShown : false,}}/>
           <Stack.Screen name="ViewNotes" component={ViewNotes}
+          options={{headerShown : false,}}/>
+          <Stack.Screen name="AddNotes" component={AddNotes}
           options={{ title: 'Adicionar Notas',
           headerShown: false, }}/>
           <Stack.Screen name="DetailNote" component={DetailNote}

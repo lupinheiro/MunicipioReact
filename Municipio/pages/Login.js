@@ -47,7 +47,7 @@ function Login({ navigation }) {
           </Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.loginBtn}
-          onPress={() => navigation.dispatch(StackActions.replace('TabRoute'))}>
+                onPress={() => navigation.dispatch(StackActions.replace('TabRoute'))}>
           <Text style={styles.loginText}>LOGIN</Text>
         </TouchableOpacity>
         <TouchableOpacity>
@@ -57,7 +57,7 @@ function Login({ navigation }) {
           </Text>
         </TouchableOpacity>
            <TouchableOpacity style={styles.buttonAnon}
-           onPress={() => navigation.navigate('NoteNav')}>
+           onPress={() => navigation.dispatch(StackActions.replace('NoteNav'))}>
               <Text style={styles.loginText}>Anónimo</Text>
               </TouchableOpacity>
       </View>

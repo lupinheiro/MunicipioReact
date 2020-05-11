@@ -46,7 +46,7 @@ function AddNotes({ navigation }) {
                 icon="close"
                 size={25}
                 color='white'
-                onPress={() => navigation.dispatch(StackActions.replace('Login'))}
+                onPress={() => navigation.navigate('ViewNotes')}
                 style={styles.iconButtonNotas}
             />
 

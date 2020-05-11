@@ -1,8 +1,13 @@
 import React, { Component, useState, useEffect } from 'react';
-import { StyleSheet, Platform, View, Button, Image, Text, TextInput, TouchableOpacity, Alert, YellowBox, ListView } from 'react-native';
+import { StyleSheet, Platform, View, Button, Image, TextInput, TouchableOpacity, Alert, YellowBox, ListView } from 'react-native';
+import Header from '../component/Header';
+import { Text, FAB,IconButton, List } from 'react-native-paper';
+import {styles} from './../stylesheet/global';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import {StackActions} from '@react-navigation/native';
+
 
 import Realm from 'realm';
 let realm ;
@@ -39,58 +44,32 @@ function DetailNote({ route, navigation }) {
   }
 
   return (
-    <View style={styles.MainContainer}>
-      <View style={styles.MainContainer}>
-          <Text style = { styles.TextInputStyle }>Note Title: {noteTitle}</Text>
-          <Text style = { styles.TextInputStyle }>Note Description: {noteDescription}</Text>
+    <>
+        <Header 
+        titleText='Notas Pessoais' />
+     <IconButton
+        icon="close"
+        size={25}
+        color='white'
+        //onPress={() => navigation.dispatch(StackActions.replace('ViewNotes'))}
+        onPress={() => navigation.navigate('ViewNotes')}
+        style={styles.iconButtonNotas}/>
+    <View style={styles.MainContainerDetail}>
+      <View style={styles.MainContainerDetail}>
+          <Text style = { styles.TextInputStyleDetail }>Note Title: {noteTitle}</Text>
+          <Text style = { styles.TextInputStyleDetail }>Note Description: {noteDescription}</Text>
       </View>
-      <View style={styles.secondcontainer}>
-          <TouchableOpacity onPress={updateData} style={styles.button} >
+      <View style={styles.secondcontainerDetail}>
+          <TouchableOpacity onPress={updateData} style={styles.buttonDetail} >
              <Text> Update record </Text>
            </TouchableOpacity>
-           <TouchableOpacity onPress={deleteData} style={styles.button} >
+           <TouchableOpacity onPress={deleteData} style={styles.buttonDetail} >
               <Text> Delete record </Text>
           </TouchableOpacity>
       </View>
     </View>
+    </>
   );
 }
-
- const styles = StyleSheet.create({
-   MainContainer: {
-       backgroundColor: '#242424',
-     flex: 1,
-   },
-   secondcontainer: {
-     flex: 1,
-     flexDirection: 'row',
-     justifyContent: 'center'
-   },
-   TextInputStyle:
-   {
-     borderWidth: 1,
-     marginTop: 100,
-     padding: 10,
-     margin: 10,
-     borderColor: '#003f5c',
-     height: 40,
-     borderRadius: 10,
-     marginBottom: 10,
-     color:"white",
-     textAlign: 'center',
-   },
-   button: {
-     alignItems: "center",
-     backgroundColor: "#003f5c",
-     padding: 10,
-     borderRadius: 10,
-     margin: 10,
-     height: 40
-   },
-   TextInputStyles:{
-       color: "white",
-   }
- });
-
 
  export default DetailNote;

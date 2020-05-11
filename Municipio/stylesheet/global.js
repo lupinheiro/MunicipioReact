@@ -138,6 +138,39 @@ line: {
   flex: 2,
   padding: 5,
   flexDirection: 'row',
+},
+MainContainerDetail: {
+  backgroundColor: '#242424',
+flex: 1,
+},
+secondcontainerDetail: {
+flex: 1,
+flexDirection: 'row',
+justifyContent: 'center'
+},
+TextInputStyleDetail:
+{
+borderWidth: 1,
+marginTop: 100,
+padding: 10,
+margin: 10,
+borderColor: '#003f5c',
+height: 40,
+borderRadius: 10,
+marginBottom: 10,
+color:"white",
+textAlign: 'center',
+},
+buttonDetail: {
+alignItems: "center",
+backgroundColor: "#003f5c",
+padding: 10,
+borderRadius: 10,
+margin: 10,
+height: 40
+},
+TextInputStylesDetail:{
+  color: "white",
 }
 
 });
