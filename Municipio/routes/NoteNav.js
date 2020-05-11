@@ -7,6 +7,7 @@ import { View, Text, Button, StyleSheet, TouchableOpacity } from 'react-native';
 import ViewNotes from '../pages/ViewNotes'
 import AddNotes from '../pages/AddNotes'
 import DetailNote from '../pages/DetailNote'
+import Update from '../pages/Update'
 const Stack = createStackNavigator();
 
 function NoteNav({navigation}) {
@@ -18,6 +19,9 @@ function NoteNav({navigation}) {
           options={{ title: 'Adicionar Notas',
           headerShown: false, }}/>
           <Stack.Screen name="DetailNote" component={DetailNote}
+             options={{headerShown : false,}}
+          />
+          <Stack.Screen name="Update" component={Update}
              options={{headerShown : false,}}
           />
              

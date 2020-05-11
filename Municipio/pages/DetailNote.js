@@ -55,7 +55,7 @@ function DetailNote({ route, navigation }) {
         onPress={() => navigation.navigate('ViewNotes')}
         style={styles.iconButtonNotas}/>
     <View style={styles.MainContainerDetail}>
-      <View style={styles.MainContainerDetail}>
+      <View style={styles.MainContainer}>
           <Text style = { styles.TextInputStyleDetail }>Note Title: {noteTitle}</Text>
           <Text style = { styles.TextInputStyleDetail }>Note Description: {noteDescription}</Text>
       </View>

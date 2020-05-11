@@ -63,7 +63,7 @@ function getupdateddata(query) {
                 size={25}
                 color='white'
                 //onPress={() => navigation.dispatch(StackActions.replace('Login'))}
-                onPress={() => navigation.navigate('Login')}
+                onPress={() => navigation.dispatch(StackActions.replace('Login'))}
                 style={styles.iconButtonNotas}/>
             <View style={styles.containerViewNotes}>
                  <FlatList
