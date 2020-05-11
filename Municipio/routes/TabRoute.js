@@ -14,7 +14,7 @@ export default function TabRoute({navigation}) {
   return (
       <Tab.Navigator
       tabBarOptions={{
-          activeTintColor: 'tomato',
+          activeTintColor: 'blue',
           inactiveTintColor: 'gray',
         }}>
         <Tab.Screen name="List" component={List}

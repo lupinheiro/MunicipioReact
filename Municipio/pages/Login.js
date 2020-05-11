@@ -25,7 +25,7 @@ function Login({ navigation }) {
           <TextInput
             style={styles.inputText}
             placeholder="Email..."
-            placeholderTextColor="#003f5c"
+            placeholderTextColor="#fff"
             onChangeText={text => setEmail(text)}
             defaultValue={email}
             />
@@ -35,7 +35,7 @@ function Login({ navigation }) {
             secureTextEntry
             style={styles.inputText}
             placeholder="Password..."
-            placeholderTextColor="#003f5c"
+            placeholderTextColor="#fff"
             onChangeText={text => setPassword(text)}
             defaultValue={password}
             />
