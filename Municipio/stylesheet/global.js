@@ -2,6 +2,7 @@ import {StyleSheet} from 'react-native';
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: 'column',
     backgroundColor: '#242424',
     alignItems: 'center',
     justifyContent: 'center',
@@ -10,7 +11,8 @@ export const styles = StyleSheet.create({
     fontWeight:"bold",
     fontSize:50,
     color:"#003f5c",
-    marginBottom:40
+    marginBottom:40,
+
   },
   containerNotas: {
     flex: 1,
@@ -106,7 +108,7 @@ fabNotas: {
 },
 containerViewNotes: {
   flex: 1,
-  backgroundColor: '#242424',
+  backgroundColor: '#003f5c',
   justifyContent: 'center',
 
 },
@@ -139,17 +141,26 @@ line: {
   padding: 5,
   flexDirection: 'row',
 },
-MainContainerDetail: {
+MainContainerDetailP: {
   backgroundColor: '#242424',
 flex: 1,
+flexDirection: 'column'
+},
+MainContainerDetailL: {
+  backgroundColor: '#242424',
+flex: 1,
+flexDirection: 'row',
+marginLeft: 280,
+marginRight: 280,
+marginTop: -40,
+paddingBottom: 90,
 },
 secondcontainerDetail: {
 flex: 1,
 flexDirection: 'row',
 justifyContent: 'center'
 },
-TextInputStyleDetail:
-{
+TextInputStyleDetail:{
 borderWidth: 1,
 marginTop: 100,
 padding: 10,
@@ -171,6 +182,8 @@ height: 40
 },
 TextInputStylesDetail:{
   color: "white",
-}
+},
+
+
 
 });

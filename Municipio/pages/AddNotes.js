@@ -1,5 +1,5 @@
 
-import { StyleSheet, View, Alert,TouchableWithoutFeedback } from 'react-native'
+import { StyleSheet, View, Alert,TouchableWithoutFeedback,Dimensions } from 'react-native'
 import React, { Component, useState, useEffect } from 'react';
 import { Text, IconButton, TextInput, FAB } from 'react-native-paper'
 import Header from '../component/Header'
@@ -12,6 +12,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 const Stack = createStackNavigator();
 
+
 //Database
 import Realm from 'realm';
 let realm;
@@ -19,6 +20,10 @@ let realm;
 function AddNotes({ navigation }) {
     const [noteTitle, setNoteTitle] = useState('');
     const [noteDescription, setNoteDescription] = useState('');
+
+    
+
+ 
   
     function insert(){
       if (noteTitle && noteDescription) {

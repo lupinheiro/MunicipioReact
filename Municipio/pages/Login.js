@@ -1,18 +1,20 @@
-import React, {Component, useState} from 'react';
+import React, {Component, useState, useEffect} from 'react';
 import {
   StyleSheet,
   Image,
   Text,
   View,
   TextInput,
-  TouchableOpacity
+  TouchableOpacity,
   } from 'react-native';
  import {styles} from './../stylesheet/global';
  import {StackActions} from '@react-navigation/native';
 
+
 function Login({ navigation }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  
 
     return (
       <View style={styles.container}>

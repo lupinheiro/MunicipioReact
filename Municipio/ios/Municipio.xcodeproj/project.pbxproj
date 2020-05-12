@@ -16,10 +16,10 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* MunicipioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MunicipioTests.m */; };
-		3AE5B8AED5DD616B6CC4BE22 /* libPods-Municipio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5828ED69D3FF154DB85E9DB1 /* libPods-Municipio.a */; };
-		733E7BC95FB0B3E7CB64AA9A /* libPods-Municipio-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C6F92EEC44FB1B1B183B01 /* libPods-Municipio-tvOS.a */; };
-		D5AC33C7B15D326AF715EF03 /* libPods-Municipio-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6587E253A8D7B3B7444FF7F0 /* libPods-Municipio-tvOSTests.a */; };
-		DCB2E12E26F41EA2E9B3BB69 /* libPods-Municipio-MunicipioTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1905315458FBE5017C11BC /* libPods-Municipio-MunicipioTests.a */; };
+		51CF1D4EAF145576C98A57F4 /* libPods-Municipio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CBBAFAAAFB893E34FB4148 /* libPods-Municipio.a */; };
+		642A3365C3C8C8A7E40A3ABE /* libPods-Municipio-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B351C0740E598E06A10293F0 /* libPods-Municipio-tvOSTests.a */; };
+		6F7F2BD5A7E1BA279293E917 /* libPods-Municipio-MunicipioTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63819EB9D1B2165A2D3D0BCF /* libPods-Municipio-MunicipioTests.a */; };
+		B675C6EA93E31132C45B97C8 /* libPods-Municipio-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D434F825C5DAC650E15A8899 /* libPods-Municipio-tvOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,9 @@
 		00E356EE1AD99517003FC87E /* MunicipioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MunicipioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* MunicipioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MunicipioTests.m; sourceTree = "<group>"; };
+		077B16309F750AA81ECED400 /* Pods-Municipio-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Municipio-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Municipio-tvOS/Pods-Municipio-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		07AE801474A84CA98630BBDE /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		0E2562E1AA5F64C2F0146BDC /* Pods-Municipio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Municipio.release.xcconfig"; path = "Target Support Files/Pods-Municipio/Pods-Municipio.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Municipio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Municipio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Municipio/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Municipio/AppDelegate.m; sourceTree = "<group>"; };
@@ -52,33 +54,31 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Municipio/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Municipio/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Municipio/main.m; sourceTree = "<group>"; };
-		1FB98049CA0D7FA90A7DFD0D /* Pods-Municipio-MunicipioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Municipio-MunicipioTests.release.xcconfig"; path = "Target Support Files/Pods-Municipio-MunicipioTests/Pods-Municipio-MunicipioTests.release.xcconfig"; sourceTree = "<group>"; };
-		2789518959B18A74C640BC1A /* Pods-Municipio-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Municipio-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Municipio-tvOS/Pods-Municipio-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		14CBBAFAAAFB893E34FB4148 /* libPods-Municipio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Municipio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* Municipio-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Municipio-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* Municipio-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Municipio-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		347B8F5DD3EA43ACBC5DA0E8 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		3682CC47A30C46BB80DB1FF7 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
-		40F402AA12244457570B2B56 /* Pods-Municipio-MunicipioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Municipio-MunicipioTests.debug.xcconfig"; path = "Target Support Files/Pods-Municipio-MunicipioTests/Pods-Municipio-MunicipioTests.debug.xcconfig"; sourceTree = "<group>"; };
-		42C6F92EEC44FB1B1B183B01 /* libPods-Municipio-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Municipio-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B97475AC8A42A2887C12D0 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 		44E51E1C467D4654B2361C38 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		4DB35CB7C1D371C41B1751F0 /* Pods-Municipio-MunicipioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Municipio-MunicipioTests.debug.xcconfig"; path = "Target Support Files/Pods-Municipio-MunicipioTests/Pods-Municipio-MunicipioTests.debug.xcconfig"; sourceTree = "<group>"; };
+		503A72135EBE26E1B2180FAD /* Pods-Municipio-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Municipio-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Municipio-tvOSTests/Pods-Municipio-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		55B1BBC492544A6693562454 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
-		5828ED69D3FF154DB85E9DB1 /* libPods-Municipio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Municipio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CCB6502AE32408FBFE9BA54 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		5E11F69064054F05931CAB68 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
-		6587E253A8D7B3B7444FF7F0 /* libPods-Municipio-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Municipio-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63819EB9D1B2165A2D3D0BCF /* libPods-Municipio-MunicipioTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Municipio-MunicipioTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FBFBB4CC8194BB7BCD1AB49 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-ionicons/fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		722DC9353884482BBFF0D844 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
-		75A6F7D5262847882BF4315B /* Pods-Municipio-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Municipio-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Municipio-tvOS/Pods-Municipio-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		7915B4727633B09EE31D9D3C /* Pods-Municipio-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Municipio-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Municipio-tvOSTests/Pods-Municipio-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8198726BC9DCB335BF4AAB7E /* Pods-Municipio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Municipio.debug.xcconfig"; path = "Target Support Files/Pods-Municipio/Pods-Municipio.debug.xcconfig"; sourceTree = "<group>"; };
 		8A31BDC236E94A6380593636 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		9757B462BC41495AA279DB6D /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
-		AF1905315458FBE5017C11BC /* libPods-Municipio-MunicipioTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Municipio-MunicipioTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B351C0740E598E06A10293F0 /* libPods-Municipio-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Municipio-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80420BA0E6B40B18783060A /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		BB2C7DBF776A4DF6BD2159CA /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
-		CF4B76042357AE80E55D14A1 /* Pods-Municipio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Municipio.debug.xcconfig"; path = "Target Support Files/Pods-Municipio/Pods-Municipio.debug.xcconfig"; sourceTree = "<group>"; };
-		D80DAE1E8D852456DF41114C /* Pods-Municipio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Municipio.release.xcconfig"; path = "Target Support Files/Pods-Municipio/Pods-Municipio.release.xcconfig"; sourceTree = "<group>"; };
-		DC1D39BF9CC4E293B45A1E62 /* Pods-Municipio-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Municipio-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-Municipio-tvOSTests/Pods-Municipio-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		C452A151D60D97A6552B306F /* Pods-Municipio-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Municipio-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Municipio-tvOS/Pods-Municipio-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C61CCD3A73CB4554B83770C4 /* Pods-Municipio-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Municipio-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-Municipio-tvOSTests/Pods-Municipio-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		D434F825C5DAC650E15A8899 /* libPods-Municipio-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Municipio-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB9AC698A1DAB93E3AAC5D5 /* Pods-Municipio-MunicipioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Municipio-MunicipioTests.release.xcconfig"; path = "Target Support Files/Pods-Municipio-MunicipioTests/Pods-Municipio-MunicipioTests.release.xcconfig"; sourceTree = "<group>"; };
 		E46E33D609F9486493F1BD8F /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCB2E12E26F41EA2E9B3BB69 /* libPods-Municipio-MunicipioTests.a in Frameworks */,
+				6F7F2BD5A7E1BA279293E917 /* libPods-Municipio-MunicipioTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AE5B8AED5DD616B6CC4BE22 /* libPods-Municipio.a in Frameworks */,
+				51CF1D4EAF145576C98A57F4 /* libPods-Municipio.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				733E7BC95FB0B3E7CB64AA9A /* libPods-Municipio-tvOS.a in Frameworks */,
+				B675C6EA93E31132C45B97C8 /* libPods-Municipio-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5AC33C7B15D326AF715EF03 /* libPods-Municipio-tvOSTests.a in Frameworks */,
+				642A3365C3C8C8A7E40A3ABE /* libPods-Municipio-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,10 +157,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				5828ED69D3FF154DB85E9DB1 /* libPods-Municipio.a */,
-				AF1905315458FBE5017C11BC /* libPods-Municipio-MunicipioTests.a */,
-				42C6F92EEC44FB1B1B183B01 /* libPods-Municipio-tvOS.a */,
-				6587E253A8D7B3B7444FF7F0 /* libPods-Municipio-tvOSTests.a */,
+				14CBBAFAAAFB893E34FB4148 /* libPods-Municipio.a */,
+				63819EB9D1B2165A2D3D0BCF /* libPods-Municipio-MunicipioTests.a */,
+				D434F825C5DAC650E15A8899 /* libPods-Municipio-tvOS.a */,
+				B351C0740E598E06A10293F0 /* libPods-Municipio-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -225,14 +225,14 @@
 		C7DC93128FE37F2965EB27C4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CF4B76042357AE80E55D14A1 /* Pods-Municipio.debug.xcconfig */,
-				D80DAE1E8D852456DF41114C /* Pods-Municipio.release.xcconfig */,
-				40F402AA12244457570B2B56 /* Pods-Municipio-MunicipioTests.debug.xcconfig */,
-				1FB98049CA0D7FA90A7DFD0D /* Pods-Municipio-MunicipioTests.release.xcconfig */,
-				2789518959B18A74C640BC1A /* Pods-Municipio-tvOS.debug.xcconfig */,
-				75A6F7D5262847882BF4315B /* Pods-Municipio-tvOS.release.xcconfig */,
-				7915B4727633B09EE31D9D3C /* Pods-Municipio-tvOSTests.debug.xcconfig */,
-				DC1D39BF9CC4E293B45A1E62 /* Pods-Municipio-tvOSTests.release.xcconfig */,
+				8198726BC9DCB335BF4AAB7E /* Pods-Municipio.debug.xcconfig */,
+				0E2562E1AA5F64C2F0146BDC /* Pods-Municipio.release.xcconfig */,
+				4DB35CB7C1D371C41B1751F0 /* Pods-Municipio-MunicipioTests.debug.xcconfig */,
+				DAB9AC698A1DAB93E3AAC5D5 /* Pods-Municipio-MunicipioTests.release.xcconfig */,
+				C452A151D60D97A6552B306F /* Pods-Municipio-tvOS.debug.xcconfig */,
+				077B16309F750AA81ECED400 /* Pods-Municipio-tvOS.release.xcconfig */,
+				503A72135EBE26E1B2180FAD /* Pods-Municipio-tvOSTests.debug.xcconfig */,
+				C61CCD3A73CB4554B83770C4 /* Pods-Municipio-tvOSTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -244,11 +244,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "MunicipioTests" */;
 			buildPhases = (
-				7AC9D56C69493192E3628365 /* [CP] Check Pods Manifest.lock */,
+				B1997EFF3F13465FC21487D2 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				0FBC39FFBA6D030085C47CF4 /* [CP] Copy Pods Resources */,
+				E5A80ED609F1D782EEF66544 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,13 +264,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Municipio" */;
 			buildPhases = (
-				7EB5066D376A83B3A2E98FC5 /* [CP] Check Pods Manifest.lock */,
+				21379972111DA4AA9B6E9E59 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00E2F89A0B0959FBFFBC8346 /* [CP] Copy Pods Resources */,
+				AE627A2906629A7F99ACEE1A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -285,7 +285,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Municipio-tvOS" */;
 			buildPhases = (
-				D4804DF87473072AB3E1E35B /* [CP] Check Pods Manifest.lock */,
+				6DC8F5275A707C70BE9697DF /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -305,7 +305,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Municipio-tvOSTests" */;
 			buildPhases = (
-				C6BD7456A9D1E50706E27047 /* [CP] Check Pods Manifest.lock */,
+				BC20D673A9317C3FCA331B65 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -417,7 +417,65 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		00E2F89A0B0959FBFFBC8346 /* [CP] Copy Pods Resources */ = {
+		21379972111DA4AA9B6E9E59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Municipio-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native Code And Images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		6DC8F5275A707C70BE9697DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Municipio-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE627A2906629A7F99ACEE1A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -465,7 +523,51 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Municipio/Pods-Municipio-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		0FBC39FFBA6D030085C47CF4 /* [CP] Copy Pods Resources */ = {
+		B1997EFF3F13465FC21487D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Municipio-MunicipioTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC20D673A9317C3FCA331B65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Municipio-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5A80ED609F1D782EEF66544 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -511,108 +613,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Municipio-MunicipioTests/Pods-Municipio-MunicipioTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Bundle React Native Code And Images";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
-		};
-		7AC9D56C69493192E3628365 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Municipio-MunicipioTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7EB5066D376A83B3A2E98FC5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Municipio-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C6BD7456A9D1E50706E27047 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Municipio-tvOSTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D4804DF87473072AB3E1E35B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Municipio-tvOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -720,7 +720,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40F402AA12244457570B2B56 /* Pods-Municipio-MunicipioTests.debug.xcconfig */;
+			baseConfigurationReference = 4DB35CB7C1D371C41B1751F0 /* Pods-Municipio-MunicipioTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -743,7 +743,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FB98049CA0D7FA90A7DFD0D /* Pods-Municipio-MunicipioTests.release.xcconfig */;
+			baseConfigurationReference = DAB9AC698A1DAB93E3AAC5D5 /* Pods-Municipio-MunicipioTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -763,7 +763,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF4B76042357AE80E55D14A1 /* Pods-Municipio.debug.xcconfig */;
+			baseConfigurationReference = 8198726BC9DCB335BF4AAB7E /* Pods-Municipio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -791,7 +791,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D80DAE1E8D852456DF41114C /* Pods-Municipio.release.xcconfig */;
+			baseConfigurationReference = 0E2562E1AA5F64C2F0146BDC /* Pods-Municipio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -813,7 +813,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2789518959B18A74C640BC1A /* Pods-Municipio-tvOS.debug.xcconfig */;
+			baseConfigurationReference = C452A151D60D97A6552B306F /* Pods-Municipio-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -841,7 +841,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75A6F7D5262847882BF4315B /* Pods-Municipio-tvOS.release.xcconfig */;
+			baseConfigurationReference = 077B16309F750AA81ECED400 /* Pods-Municipio-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -869,7 +869,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7915B4727633B09EE31D9D3C /* Pods-Municipio-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 503A72135EBE26E1B2180FAD /* Pods-Municipio-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -896,7 +896,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC1D39BF9CC4E293B45A1E62 /* Pods-Municipio-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = C61CCD3A73CB4554B83770C4 /* Pods-Municipio-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;

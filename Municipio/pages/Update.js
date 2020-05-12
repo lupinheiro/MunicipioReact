@@ -47,7 +47,7 @@ function Update({ route, navigation }) {
   }
 
   return (
-    <View style={styles.MainContainerDetail}>
+    <View style={styles.MainContainerDetailP}>
       <TextInput
             placeholder="Insert Note Title"
             style = { styles.TextInputStyleDetail }
