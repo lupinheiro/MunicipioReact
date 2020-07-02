@@ -183,6 +183,13 @@ height: 40
 TextInputStylesDetail:{
   color: "white",
 },
+containerMap: {
+  ...StyleSheet.absoluteFillObject,
+  height: '100%',
+},
+map: {
+  ...StyleSheet.absoluteFillObject,
+},
 
 
 

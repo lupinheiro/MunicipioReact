@@ -12,8 +12,8 @@ import {
 
 
 function Login({ navigation }) {
-  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [username, setName] = useState('');
   
   function _Login(props){
     fetch('http://192.168.64.2/myslim/api/logar', {
@@ -24,13 +24,14 @@ function Login({ navigation }) {
       },
       body: JSON.stringify({
      
-        email: email,
+        username: username,
      
         password: password
      
       })
       
     })
+    navigation.dispatch(StackActions.replace('TabRoute'))
   }
 
     return (
@@ -43,9 +44,9 @@ function Login({ navigation }) {
         <View style={styles.inputView} >
           <TextInput
             style={styles.inputText}
-            placeholder="Email..."
+            placeholder="Username..."
             placeholderTextColor="#fff"
-            onChangeText={text => setEmail(text)}
+            onChangeText={text => setName(text)}
             />
         </View>
         <View style={styles.inputView} >
