@@ -15,6 +15,23 @@ function Login({ navigation }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   
+  function _Login(props){
+    fetch('http://192.168.64.2/myslim/api/logar', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+     
+        email: email,
+     
+        password: password
+     
+      })
+      
+    })
+  }
 
     return (
       <View style={styles.container}>
@@ -29,7 +46,6 @@ function Login({ navigation }) {
             placeholder="Email..."
             placeholderTextColor="#fff"
             onChangeText={text => setEmail(text)}
-            defaultValue={email}
             />
         </View>
         <View style={styles.inputView} >
@@ -39,17 +55,10 @@ function Login({ navigation }) {
             placeholder="Password..."
             placeholderTextColor="#fff"
             onChangeText={text => setPassword(text)}
-            defaultValue={password}
             />
         </View>
-        <TouchableOpacity>
-          <Text style={styles.forgot}
-          onPress={() => navigation.navigate('ForgotPassword')}>
-            <Text style={styles.loginText}>ForgotPassword?</Text>
-          </Text>
-        </TouchableOpacity>
         <TouchableOpacity style={styles.loginBtn}
-                onPress={() => navigation.dispatch(StackActions.replace('TabRoute'))}>
+                onPress={()=> _Login()}>
           <Text style={styles.loginText}>LOGIN</Text>
         </TouchableOpacity>
         <TouchableOpacity>
