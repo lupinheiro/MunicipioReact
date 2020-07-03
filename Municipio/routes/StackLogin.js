@@ -9,7 +9,7 @@ import {styles} from './../stylesheet/global';
 import { StackNavigator} from 'react-navigation';
 
 import Login from './../pages/Login';
-import TabRoute from './../routes/TabRoute';
+import TabRoute from './TabRoute';
 import NoteNav from './NoteNav';
 import SignUp from '../pages/SignUp';
 import ForgotPassword from '../pages/ForgotPassword';

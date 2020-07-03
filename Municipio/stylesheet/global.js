@@ -106,6 +106,13 @@ fabNotas: {
     bottom: 0,
     backgroundColor: '#003f5c'
 },
+fabNotas2: {
+  position: 'absolute',
+  margin: 20,
+  right: 60,
+  bottom: 0,
+  backgroundColor: '#003f5c'
+},
 containerViewNotes: {
   flex: 1,
   backgroundColor: '#003f5c',
