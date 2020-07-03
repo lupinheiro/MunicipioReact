@@ -12,7 +12,7 @@ import Adiciona from '../pages/Adiciona';
 const Stack = createStackNavigator();
 
 function StackMap({route, navigation}) {
-   const {user}  = route.params;
+   const user  = route.params;
    return (
        <Stack.Navigator initialRouteName="Home">
           <Stack.Screen name="Map" component={Map} initialParams={user}

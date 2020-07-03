@@ -33,8 +33,10 @@ function Login({ navigation }) {
         .then(response => response.json())
         .then(data => {
           if (data.status) {
-            console.log(data);
-            navigation.dispatch(StackActions.replace('TabRoute',{user: user}))
+           navigation.navigate({
+            name: 'TabRoute',
+            params: {user: data},
+          })
           }
         })
         .catch(error => console.error(error));

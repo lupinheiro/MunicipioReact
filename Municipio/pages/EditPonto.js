@@ -19,11 +19,20 @@ import Header from '../component/Header'
  function EditPonto({ route, navigation }) {
     const {user} = route.params;
     const {marker} = route.params;
+    const [nome, setNome] = useState('');
+    const [descr, setDescr] = useState('');
+
+    
 
 
 const txt1 = 'http://192.168.64.2/myslim/api/apaga/';
 const txt2 = marker.id;
 const url_del = `${txt1}${txt2}`;
+
+const txt3 = 'http://192.168.64.2/myslim/api/edita/';
+const txt4 = marker.id;
+const url_edit = `${txt3}${txt4}`;
+
 
     function deletePonto() {
         Alert.alert('Alerta', 'Confirma que quer remover o ponto ?', [
@@ -56,6 +65,36 @@ const url_del = `${txt1}${txt2}`;
           .catch(error => console.error(error));
       }
 
+      function update(){
+        if(nome && descr){
+            const requestOptions = {
+                method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({ nome: nome , descr: descr}),
+              };
+              fetch(url_edit, requestOptions)
+                .then(response => response.json())
+                .then(data => {
+                  if(data.status){
+                    console.log(data);
+                    Alert.alert(
+                        'Info',
+                        'Registo atualizado com sucesso',
+                        [
+                          {
+                            text: 'Ok',
+                            onPress: () =>
+                              navigation.dispatch(StackActions.popToTop())
+                          },
+                        ],
+                        { cancelable: false }
+                      );
+                  }
+                }).catch((error) => console.error(error));
+            
+        }
+      }
+
    return (
     <>
     <Header 
@@ -72,12 +111,12 @@ const url_del = `${txt1}${txt2}`;
         <TextInput
             label="Nome"
             mode='outlined'
-            onChangeText={text => setNoteTitle(text)}
+            onChangeText={text => setNome(text)}
             style={styles.titleNotas}
         />
         <TextInput
             label="Descrição"
-            onChangeText = { text => setNoteDescription(text)} 
+            onChangeText = { text => setDescr(text)} 
             mode="flat"
             multiline={true}
             style={styles.textNotas}
@@ -89,7 +128,7 @@ const url_del = `${txt1}${txt2}`;
             style={styles.fabNotas}
             small
             icon="check"
-            onPress={() => navigation.navigate('Map')}
+            onPress={update}
         />
          <FAB
             style={styles.fabNotas2}

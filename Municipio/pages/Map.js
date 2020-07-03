@@ -3,14 +3,15 @@ import React, { Component, useState, useEffect } from 'react';
 import { Text, IconButton, TextInput, FAB } from 'react-native-paper'
 import Header from '../component/Header'
 import {styles} from './../stylesheet/global';
+
 import MapView, { PROVIDER_GOOGLE, Marker, Callout} from 'react-native-maps';
 import Geolocation from '@react-native-community/geolocation';
 let markersURL = 'http://192.168.64.2/myslim/api/pontos';
 
-import {StackActions} from '@react-navigation/native';
+/*import {StackActions} from '@react-navigation/native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-
+*/
 function Map({route, navigation }) {
   const user = route.params;
   const [loading, setLoading] = useState(true);
@@ -23,7 +24,7 @@ function Map({route, navigation }) {
         setLoading(false), setData(responseJson.pontos);
       })
       .catch(error => console.error(error));
-  }, []);
+  },[] );
 
   const [initialPosition, setInitialPosition] = useState({
             latitude: 41.6946,
@@ -59,8 +60,8 @@ function Map({route, navigation }) {
     return () => Geolocation.clearWatch(watchId);
   }, []);
 
-function callOut(marker) {
-  if (user.id == marker.id_user) {
+function Edit(marker) {
+  if (user.user.id == marker.id_user) {
     navigation.navigate('EditPonto', {
       user: user,
       marker: marker,
@@ -93,14 +94,16 @@ function callOut(marker) {
               latitude: parseFloat(marker.lat),
               longitude: parseFloat(marker.lng),
             }}>
-            <Callout onPress={() => callOut(marker)}>
+            <Callout onPress={() => Edit(marker)}>
             <Image source={require('../images/map.png')}
             style={{width: 100, height: 100}}/>
               <Text style={{fontWeight: 'bold'}}>{marker.nome}</Text>
               <Text>Latitude: {marker.lat}</Text>
               <Text>Longitude: {marker.lng}</Text>
               <Text>Descrição: {marker.descr}</Text>
-              <Text>id: {marker.id_user}</Text>
+              <Text>idPonto: {marker.id}</Text>
+              <Text>idUtilizador: {marker.id_user}</Text>
+
             </Callout>
           </Marker>
         ))}

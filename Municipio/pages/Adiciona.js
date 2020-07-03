@@ -22,7 +22,7 @@ function Adiciona({route, navigation}) {
           lat: lat,
           lng: lng,
           nome: nome,
-          id_user: user.id,
+          id_user: user.user.id,
           descr: descr,
         }),
       };
@@ -33,7 +33,6 @@ function Adiciona({route, navigation}) {
         .then(response => response.json())
         .then(data => {
           if (data.status) {
-            console.log(data);
             navigation.goBack();
           }
         })
